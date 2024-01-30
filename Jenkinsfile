@@ -1,5 +1,9 @@
 pipeline {
- 
+ agent { 
+    docker { 
+     
+    } 
+  }
   stages {
     stage('install playwright') {
       steps {
